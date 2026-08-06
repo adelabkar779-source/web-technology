@@ -2,68 +2,188 @@
 <html lang="en">
 
 <head>
-
     <!-- Page Title -->
-    <title>Adel Ali Adam</title>
+    <title>Adel Ali Adam | Resume</title>
 
-    <!-- Character Encoding -->
+    <!-- Character Encoding & Responsive Design -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Page Description -->
-    <meta name="description" content="Adel Ali Adam Resume">
-
-    <!-- Keywords -->
-    <meta name="keywords" content="Adel, Resume, Information Technology">
+    <!-- Page Description & Keywords -->
+    <meta name="description" content="Adel Ali Adam Resume - IT Student & Web Developer">
+    <meta name="keywords" content="Adel, Resume, Information Technology, Web Development">
 
     <!-- Author -->
     <meta name="author" content="Adel Ali Adam">
 
-    <!-- Responsive Design -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --text-color: #1f2937;
+            --bg-color: #f9fafb;
+            --card-bg: #ffffff;
+            --border-color: #e5e7eb;
+        }
 
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .resume-container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 24px;
+            margin-bottom: 24px;
+        }
+
+        .logo-image {
+            flex-shrink: 0;
+            width: 90px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .header-text h1 {
+            margin: 0 0 6px 0;
+            color: var(--primary-color);
+            font-size: 2rem;
+        }
+
+        .header-text .bio {
+            margin: 0;
+            font-size: 1rem;
+            color: #4b5563;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: var(--text-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 6px;
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .project-card {
+            background-color: #f3f4f6;
+            padding: 14px 18px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+
+        @media (max-width: 500px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- Main Heading -->
-    <h1>Adel Ali Adam</h1>
+    <div class="resume-container">
+        
+        <!-- Header with Logo and Bio -->
+        <header>
+            <img src="my-logo.png" alt="Adel Ali Adam Logo" class="logo-image">
+            <div class="header-text">
+                <h1>Adel Ali Adam</h1>
+                <p class="bio">
+                    My name is Adel Ali Adam. I am an Information Technology student at
+                    Fatoni University. I am interested in web development and programming.
+                </p>
+            </div>
+        </header>
 
-    <!-- About Me -->
-    <p>
-        My name is Adel Ali Adam. I am an Information Technology student at
-        Fatoni University. I am interested in web development and programming.
-    </p>
+        <main>
+            <!-- Education -->
+            <section>
+                <h2>Education</h2>
+                <p><strong>Bachelor of Science in Information Technology</strong><br>
+                Fatoni University</p>
+            </section>
 
-    <!-- Education -->
-    <h2>Education</h2>
-    <p>Information Technology - Fatoni University</p>
+            <!-- Programming Languages -->
+            <section>
+                <h2>Programming Languages</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>PHP</li>
+                    <li>SQL</li>
+                </ul>
+            </section>
 
-    <!-- Languages -->
-    <h2>Languages</h2>
-    <ul>
-        <li>Arabic</li>
-        <li>English</li>
-    </ul>
+            <!-- Projects -->
+            <section>
+                <h2>Projects</h2>
+                <div class="project-card">
+                    <strong>Movie Recommendation Website</strong>
+                    <p style="margin: 4px 0 0 0; font-size: 0.95rem; color: #4b5563;">
+                        A project for building an interactive movie recommendation platform.
+                    </p>
+                </div>
+            </section>
 
-    <!-- Programming Languages -->
-    <h2>Programming Languages</h2>
-    <ul>
-        <li>HTML</li>
-        <li>PHP</li>
-        <li>SQL</li>
-    </ul>
+            <!-- Languages -->
+            <section>
+                <h2>Languages</h2>
+                <ul>
+                    <li>Arabic</li>
+                    <li>English</li>
+                </ul>
+            </section>
 
-    <!-- Projects -->
-    <h2>Projects</h2>
-    <p>Movie Recommendation Website</p>
+            <!-- Hobbies -->
+            <section>
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Programming</li>
+                    <li>Playing Football</li>
+                    <li>Computer Hardware</li>
+                </ul>
+            </section>
+        </main>
 
-    <!-- Hobbies -->
-    <h2>Hobbies</h2>
-    <ul>
-        <li>Programming</li>
-        <li>Playing Football</li>
-        <li>Computer Hardware</li>
-    </ul>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Adel Ali Adam. All rights reserved.</p>
+        </footer>
+
+    </div>
 
 </body>
 
