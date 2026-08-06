@@ -53,11 +53,9 @@
             margin-bottom: 24px;
         }
 
-        .logo-image {
+        .header-logo-svg {
             flex-shrink: 0;
-            width: 90px;
-            height: auto;
-            border-radius: 10px;
+            display: block;
         }
 
         .header-text h1 {
@@ -117,9 +115,12 @@
 
     <div class="resume-container">
         
-        <!-- Header with Logo and Bio -->
+        <!-- Header with SVG Logo and Bio -->
         <header>
-            <img src="my-logo.png" alt="Adel Ali Adam Logo" class="logo-image">
+            <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg" class="header-logo-svg">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+            </svg>
+
             <div class="header-text">
                 <h1>Adel Ali Adam</h1>
                 <p class="bio">
