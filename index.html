@@ -16,176 +16,78 @@
     <!-- Author -->
     <meta name="author" content="Adel Ali Adam">
 
-    <style>
-        :root {
-            --primary-color: #2563eb;
-            --text-color: #1f2937;
-            --bg-color: #f9fafb;
-            --card-bg: #ffffff;
-            --border-color: #e5e7eb;
-        }
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <<body>
 
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 20px;
-        }
+    <header>
+        <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg" class="header-logo-svg">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+        </svg>
 
-        .resume-container {
-            max-width: 700px;
-            margin: 40px auto;
-            background: var(--card-bg);
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            border: 1px solid var(--border-color);
-        }
+        <div class="header-text">
+            <h1>Adel Ali Adam</h1>
 
-        header {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 24px;
-            margin-bottom: 24px;
-        }
+            <p class="bio">
+                My name is Adel Ali Adam. I am an Information Technology student at
+                Fatoni University. I am interested in web development and programming.
+            </p>
+        </div>
+    </header>
 
-        .header-logo-svg {
-            flex-shrink: 0;
-            display: block;
-        }
+    <main>
 
-        .header-text h1 {
-            margin: 0 0 6px 0;
-            color: var(--primary-color);
-            font-size: 2rem;
-        }
+        <section>
+            <h2>Education</h2>
+            <p>
+                <strong>Bachelor of Science in Information Technology</strong><br>
+                Fatoni University
+            </p>
+        </section>
 
-        .header-text .bio {
-            margin: 0;
-            font-size: 1rem;
-            color: #4b5563;
-        }
+        <section>
+            <h2>Programming Languages</h2>
+            <ul>
+                <li>HTML</li>
+                <li>PHP</li>
+                <li>SQL</li>
+            </ul>
+        </section>
 
-        h2 {
-            font-size: 1.25rem;
-            color: var(--text-color);
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 6px;
-            margin-top: 28px;
-            margin-bottom: 12px;
-        }
+        <section>
+            <h2>Projects</h2>
 
-        ul {
-            padding-left: 20px;
-            margin: 0;
-        }
+            <div class="project-card">
+                <strong>Movie Recommendation Website</strong>
 
-        li {
-            margin-bottom: 6px;
-        }
-
-        .project-card {
-            background-color: #f3f4f6;
-            padding: 14px 18px;
-            border-radius: 8px;
-            border-left: 4px solid var(--primary-color);
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 0.875rem;
-            color: #6b7280;
-        }
-
-        @media (max-width: 500px) {
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="resume-container">
-        
-        <!-- Header with SVG Logo and Bio -->
-        <header>
-            <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg" class="header-logo-svg">
-                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-            </svg>
-
-            <div class="header-text">
-                <h1>Adel Ali Adam</h1>
-                <p class="bio">
-                    My name is Adel Ali Adam. I am an Information Technology student at
-                    Fatoni University. I am interested in web development and programming.
+                <p class="project-description">
+                    A project for building an interactive movie recommendation platform.
                 </p>
             </div>
-        </header>
+        </section>
 
-        <main>
-            <!-- Education -->
-            <section>
-                <h2>Education</h2>
-                <p><strong>Bachelor of Science in Information Technology</strong><br>
-                Fatoni University</p>
-            </section>
+        <section>
+            <h2>Languages</h2>
+            <ul>
+                <li>Arabic</li>
+                <li>English</li>
+            </ul>
+        </section>
 
-            <!-- Programming Languages -->
-            <section>
-                <h2>Programming Languages</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>PHP</li>
-                    <li>SQL</li>
-                </ul>
-            </section>
+        <section>
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Programming</li>
+                <li>Playing Football</li>
+                <li>Computer Hardware</li>
+            </ul>
+        </section>
 
-            <!-- Projects -->
-            <section>
-                <h2>Projects</h2>
-                <div class="project-card">
-                    <strong>Movie Recommendation Website</strong>
-                    <p style="margin: 4px 0 0 0; font-size: 0.95rem; color: #4b5563;">
-                        A project for building an interactive movie recommendation platform.
-                    </p>
-                </div>
-            </section>
+    </main>
 
-            <!-- Languages -->
-            <section>
-                <h2>Languages</h2>
-                <ul>
-                    <li>Arabic</li>
-                    <li>English</li>
-                </ul>
-            </section>
-
-            <!-- Hobbies -->
-            <section>
-                <h2>Hobbies</h2>
-                <ul>
-                    <li>Programming</li>
-                    <li>Playing Football</li>
-                    <li>Computer Hardware</li>
-                </ul>
-            </section>
-        </main>
-
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2026 Adel Ali Adam. All rights reserved.</p>
-        </footer>
-
-    </div>
+    <footer>
+        <p>&copy; 2026 Adel Ali Adam. All rights reserved.</p>
+    </footer>
 
 </body>
-
-</html>
+    </body>
