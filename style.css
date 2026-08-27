@@ -82,9 +82,4 @@ footer {
     color: #6b7280;
 }
 
-@media (max-width: 500px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-}
+
