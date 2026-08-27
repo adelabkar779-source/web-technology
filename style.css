@@ -20,7 +20,14 @@ body {
     border: 1px solid var(--border-color);
 }
 
-
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+}
 .header-logo-svg {
     flex-shrink: 0;
     display: block;
