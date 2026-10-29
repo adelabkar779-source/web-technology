@@ -2,35 +2,25 @@
 <html lang="en">
 
 <head>
-    <!-- My profile -->
     <title>Adel Ali Adam | Resume</title>
-
-    <!-- Character Encoding  -->
     <meta charset="UTF-8">
-
-    <!-- Responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Page Description  -->
     <meta name="description" content="Adel Ali Adam Resume - IT Student & Web Developer">
-
-    <!-- Keywords -->
     <meta name="keywords" content="Adel, Resume, Information Technology, Web Development">
-
-    <!-- Author -->
     <meta name="author" content="Adel Ali Adam">
 
-    <link rel="stylesheet" href="style.css">
-    </head> 
-    <body>
+    <!-- Tailwind CSS (replaces style.css) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-    <header>
-        <img src="profile.jpg" alt="Adel Ali Adam" class="header-logo-svg">
+<body class="bg-stone-200 text-gray-800 leading-relaxed max-w-2xl mx-auto my-10 p-10 rounded-xl border border-gray-200 shadow-md">
 
-        <hgroup class="header-text">
-            <h1>Adel Ali Adam</h1>
+    <header class="flex flex-col sm:flex-row items-center gap-5 border-b-2 border-gray-200 pb-6 mb-6">
+        <img src="profile.jpg" alt="Adel Ali Adam" class="w-24 h-24 rounded-full object-cover shrink-0">
 
-            <p class="bio">
+        <hgroup class="text-center sm:text-left">
+            <h1 class="text-3xl font-bold text-slate-950 mb-1.5">Adel Ali Adam</h1>
+            <p class="text-gray-600">
                 My name is Adel Ali Adam. I am an Information Technology student at
                 Fatoni University. I am interested in web development and programming.
             </p>
@@ -40,70 +30,78 @@
     <main>
 
         <section>
-            <h2>Education</h2>
+            <h2 class="text-xl border-b border-gray-200 pb-1.5 mt-7 mb-3">Education</h2>
             <p>
                 <strong>Bachelor of Science in Information Technology</strong><br>
                 Fatoni University
             </p>
-        </section> 
+        </section>
 
         <section>
-            <h2>Programming Languages</h2>
-            <ul>
+            <h2 class="text-xl border-b border-gray-200 pb-1.5 mt-7 mb-3">Programming Languages</h2>
+            <ul class="list-disc pl-5 space-y-1.5">
                 <li>HTML</li>
-                <li>CSS</li>
+                <li>CSS (Tailwind CSS)</li>
                 <li>JavaScript</li>
             </ul>
         </section>
 
         <section>
-            <h2>Projects</h2>
+            <h2 class="text-xl border-b border-gray-200 pb-1.5 mt-7 mb-3">Projects</h2>
 
-            <article class="project-card">
-                <strong>Movie Recommendation Website</strong>
+            <article class="bg-gray-100 px-4 py-3.5 rounded-lg border-l-4 border-slate-950 hover:shadow-md transition">
+                <strong>What Should I Watch - Movie Recommendation Website</strong>
 
-                <p class="project-description">
-                    A project for building an interactive movie recommendation platform.
+                <p class="text-gray-600 mt-1">
+                    An interactive website that recommends movies and anime, built with
+                    HTML, CSS, JavaScript and Bootstrap.
                 </p>
+            </article>
+
+            <article class="bg-gray-100 px-4 py-3.5 rounded-lg border-l-4 border-slate-950 hover:shadow-md transition mt-3">
+                <strong>Guessing Number Game</strong>
+
+                <p class="text-gray-600 mt-1">
+                    A JavaScript game where you guess the computer's number, built with functions.
+                </p>
+
+                <a href="guessing-game.html"
+                   class="inline-block mt-2 text-sm font-medium text-blue-700 hover:underline">
+                    Play the game &rarr;
+                </a>
             </article>
         </section>
 
         <section>
-            <h2>Languages</h2>
-            <ul>
+            <h2 class="text-xl border-b border-gray-200 pb-1.5 mt-7 mb-3">Languages</h2>
+            <ul class="list-disc pl-5 space-y-1.5">
                 <li>Arabic</li>
                 <li>English</li>
             </ul>
         </section>
 
         <section>
-            <h2>Hobbies</h2>
-            <ul>
+            <h2 class="text-xl border-b border-gray-200 pb-1.5 mt-7 mb-3">Hobbies</h2>
+            <ul class="list-disc pl-5 space-y-1.5">
                 <li>Programming</li>
                 <li>Computer Hardware</li>
                 <li>Video Games</li>
             </ul>
         </section>
 
-</head>
-<body>
-
-<ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#Palestinian Governorates">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#bottom">About</a></li>
-</ul>
-
-<h2>Horizontal Navbar Using Float</h2>
-
-<p>Some text on the website.</p>
+        <section>
+            <h2 class="text-xl border-b border-gray-200 pb-1.5 mt-7 mb-3">Contact</h2>
+            <ul class="list-disc pl-5 space-y-1.5">
+                <li>Email: <a href="mailto:adelabkar779@gmail.com" class="text-blue-700 hover:underline">adelabkar779@gmail.com</a></li>
+            </ul>
+        </section>
 
     </main>
 
-    <footer>
+    <footer class="text-center mt-8 text-sm text-gray-500">
         <p>&copy; 2026 Adel Ali Adam. All rights reserved.</p>
-    </footer>   
+    </footer>
 
- </body>
-  </html>
+</body>
+
+</html>
